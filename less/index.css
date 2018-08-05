@@ -1,0 +1,1833 @@
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+input {
+  border: none;
+  outline: none;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+}
+.loading {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  background-color: #FFECE9;
+  width: 100%;
+  height: 100%;
+}
+.loading .rider {
+  width: 4.8125rem;
+  height: 3.78125rem;
+  position: absolute;
+  top: 7.28125rem;
+  right: 3.4375rem;
+  background: url("../image/loading/rider1_.png") no-repeat center / 100% 100%;
+}
+.loading .process {
+  width: 13rem;
+  height: 0.625rem;
+  border: 2px solid #373838;
+  background-color: #fc254d;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.5rem;
+  top: 11.3125rem;
+  border-radius: 0.625rem;
+}
+.loading .message {
+  width: 6.875rem;
+  height: 0.875rem;
+  background: url("../image/loading/loading-txt.png") no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.4375rem;
+  top: 13.34375rem;
+}
+.loading .logo {
+  width: 5.0625rem;
+  height: 1.21875rem;
+  background: url("../image/loading/waimai-logo.png") no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.53125rem;
+  bottom: 5.15625rem;
+}
+.loading .text {
+  width: 100%;
+  text-align: center;
+  color: #E58997;
+  position: absolute;
+  bottom: 2.8125rem;
+}
+.welcome {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: deepskyblue;
+}
+.welcome .info {
+  width: 12.40625rem;
+  height: 7rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.203125rem;
+  top: 1.3125rem;
+  background: url("../image/page1/theme-title.png") no-repeat center / 100% 100%;
+}
+.welcome .info .hello {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.25rem;
+  background: url("../image/page1/hello.png") no-repeat center / 100% 100%;
+}
+.welcome .cloud {
+  width: 20rem;
+  height: 21.03125rem;
+  position: absolute;
+  bottom: 0;
+  background: url("../image/page1/clouds.png") no-repeat center / 100% 100%;
+}
+.welcome .grass1 {
+  width: 20rem;
+  height: 12.375rem;
+  position: absolute;
+  bottom: 0;
+  background: url("../image/page1/grass1.png") no-repeat center / 100% 100%;
+}
+.welcome .tree {
+  width: 18.71875rem;
+  height: 2.21875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.359375rem;
+  bottom: 11rem;
+  background: url("../image/page1/trees.png") no-repeat center / 100% 100%;
+}
+.welcome .grass2 {
+  width: 20rem;
+  height: 7.125rem;
+  position: absolute;
+  bottom: 0;
+  background: url("../image/page1/grass2.png") no-repeat center / 100% 100%;
+}
+.welcome .bear-box {
+  width: 5.21875rem;
+  height: 8.71875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.609375rem;
+  bottom: 10.8125rem;
+}
+.welcome .bear-box .bear {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: url("../image/page1/rider2.png") no-repeat center / 100% 100%;
+}
+.welcome .bear-box .smoke {
+  width: 5.21875rem;
+  height: 1rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.609375rem;
+  bottom: 0;
+  background: url("../image/page1/jet1.png") no-repeat center / 100% 100%;
+}
+.welcome .btn-box {
+  width: 6.5rem;
+  height: 6.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.25rem;
+  bottom: 2.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome .btn-box .btn {
+  width: 3.875rem;
+  height: 3.53125rem;
+  background: url("../image/page1/bear-btn-pre.png") no-repeat center / 100% 100%;
+}
+.welcome .btn-box .circle1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../image/page1/circle1.png") no-repeat center / 100% 100%;
+}
+.welcome .btn-box .circle2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../image/page1/circle2.png") no-repeat center / 100% 100%;
+}
+.waimai-container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.waimai-container .swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.waimai-container .swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.waimai-container .swiper-wrapper .page1 {
+  background-color: #BE8452;
+}
+.waimai-container .swiper-wrapper .page1 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page1 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page1 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page1 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page1 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page2/sphere1.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .bg {
+  width: 18rem;
+  height: 17.90625rem;
+  background: url('../image/page2/bg1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9rem;
+  bottom: 7.875rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .person {
+  z-index: 1;
+  width: 13.71875rem;
+  height: 10.90625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.859375rem;
+  bottom: 9.0625rem;
+  background: url('../image/page2/front1.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .person .file {
+  width: 2.65625rem;
+  height: 1.5625rem;
+  position: absolute;
+  left: 0.84375rem;
+  bottom: 3.25rem;
+  background: url("../image/page2/papers.png") no-repeat bottom right;
+  background-size: 3.59375rem 3.5625rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .person .file .paper1 {
+  width: 2.6875rem;
+  height: 0.8125rem;
+  position: absolute;
+  left: -2.1875rem;
+  bottom: 1.5625rem;
+  background: url("../image/page2/papers.png") no-repeat 0 -1rem;
+  background-size: 3.59375rem 3.5625rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .person .file .paper2 {
+  width: 2rem;
+  height: 0.625rem;
+  position: absolute;
+  right: 0;
+  bottom: 2.5rem;
+  background: url("../image/page2/papers.png") no-repeat -1.40625rem 0;
+  background-size: 3.59375rem 3.5625rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .text {
+  z-index: 1;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url('../image/page2/txt-bubbl.png') no-repeat center / 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page1 .text .bg-message {
+  width: 6.875rem;
+  height: 0.9375rem;
+  background: url('../image/page2/txt-work.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .bg {
+  width: 18.1875rem;
+  height: 16.25rem;
+  background: url('../image/page2/bg2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.09375rem;
+  bottom: 7.875rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .person {
+  z-index: 1;
+  width: 13.625rem;
+  height: 10.375rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.8125rem;
+  bottom: 8.4375rem;
+  background: url('../image/page2/relax.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .person .leg1 {
+  width: 3.53125rem;
+  height: 0.75rem;
+  background: url('../image/page2/leg1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 6.09375rem;
+  bottom: 3.4375rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .person .leg2 {
+  width: 2.65625rem;
+  height: 2.21875rem;
+  background: url('../image/page2/leg2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 6.03125rem;
+  bottom: 3.4375rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .text {
+  z-index: 1;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url('../image/page2/txt-bubbl.png') no-repeat center / 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page2 .text .bg-message {
+  width: 6.875rem;
+  height: 0.9375rem;
+  background: url('../image/page2/txt-life.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .bg {
+  width: 17.53125rem;
+  height: 16.125rem;
+  background: url('../image/page2/bg3.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -8.765625rem;
+  bottom: 8.4375rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .person {
+  z-index: 1;
+  width: 15.71875rem;
+  height: 7.15625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -7.859375rem;
+  bottom: 9.375rem;
+  background: url('../image/page2/person.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .person .word1 {
+  width: 2.875rem;
+  height: 2.59375rem;
+  background: url('../image/page2/word1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 0.21875rem;
+  bottom: 6.0625rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .person .word2 {
+  width: 2.40625rem;
+  height: 2.1875rem;
+  background: url('../image/page2/word2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 3.59375rem;
+  bottom: 7.65625rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .person .word3 {
+  width: 2.875rem;
+  height: 3.25rem;
+  background: url('../image/page2/word4.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 4.0625rem;
+  bottom: 6.875rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .person .word4 {
+  width: 2.46875rem;
+  height: 2.28125rem;
+  background: url('../image/page2/word3.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 0.375rem;
+  bottom: 7.1875rem;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .text {
+  z-index: 1;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url('../image/page2/txt-bubbl.png') no-repeat center / 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.waimai-container .swiper-wrapper .page1 .scroller-page3 .text .bg-message {
+  width: 6.875rem;
+  height: 0.9375rem;
+  background: url('../image/page2/txt-res.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page1 .bear {
+  width: 5.5625rem;
+  height: 4.1875rem;
+  background: url('../image/page2/bear1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 1.1875rem;
+  bottom: 0;
+}
+.waimai-container .swiper-wrapper .page2 {
+  background-color: #EF4143;
+}
+.waimai-container .swiper-wrapper .page2 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page2 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page2 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page2 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page2 .bg {
+  width: 18.5rem;
+  height: 15.3125rem;
+  background: url('../image/page3/bg4_.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.25rem;
+  bottom: 10.3125rem;
+}
+.waimai-container .swiper-wrapper .page2 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page3/sphere2.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page2 .bear {
+  width: 7.09375rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.546875rem;
+  bottom: 9.6875rem;
+  background-image: url('../image/page3/bear2.png');
+  background-repeat: no-repeat;
+  background-size: 11.5rem 13.34375rem;
+  background-position: -3.21875rem -3rem;
+}
+.waimai-container .swiper-wrapper .page2 .bear .hand-left {
+  width: 2.3125rem;
+  height: 2.40625rem;
+  background: url('../image/page3/hand-left_.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: 5.625rem;
+  left: 0.9375rem;
+}
+.waimai-container .swiper-wrapper .page2 .bear .hand-right {
+  width: 2.3125rem;
+  height: 2.40625rem;
+  background: url('../image/page3/hand-right.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: 5.625rem;
+  right: 0.9375rem;
+}
+.waimai-container .swiper-wrapper .page2 .bear .face1 {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  background: url('../image/page3/face1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: 0;
+  left: -3.1875rem;
+}
+.waimai-container .swiper-wrapper .page2 .bear .face2 {
+  width: 3.15625rem;
+  height: 3.1875rem;
+  background: url('../image/page3/face2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: -3.15625rem;
+  right: -1.59375rem;
+}
+.waimai-container .swiper-wrapper .page2 .table {
+  width: 16.0625rem;
+  height: 8.0625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -8.03125rem;
+  bottom: 4.375rem;
+  background: url('../image/page3/table.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page2 .food {
+  width: 11.0625rem;
+  height: 4.75rem;
+  background: url('../image/page3/foods.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -5.53125rem;
+  bottom: 10.3125rem;
+}
+.waimai-container .swiper-wrapper .page3 {
+  background-color: #DD8903;
+}
+.waimai-container .swiper-wrapper .page3 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page3 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page3 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page3 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page3 .bg {
+  width: 18.5rem;
+  height: 18.125rem;
+  background: url('../image/page4/bg5.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.25rem;
+  bottom: 9.375rem;
+}
+.waimai-container .swiper-wrapper .page3 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page4/sphere3.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page3 .bear {
+  width: 6.4375rem;
+  height: 10.03125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.21875rem;
+  bottom: 6.09375rem;
+  background: url('../image/page4/bear3.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page3 .pic1 {
+  width: 6.15625rem;
+  height: 4.375rem;
+  background: url('../image/page4/license.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 1.25rem;
+  bottom: 15.625rem;
+}
+.waimai-container .swiper-wrapper .page3 .pic2 {
+  width: 6.40625rem;
+  height: 3.34375rem;
+  background: url('../image/page4/oil.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 7.03125rem;
+  bottom: 20.625rem;
+}
+.waimai-container .swiper-wrapper .page3 .pic3 {
+  width: 6.1875rem;
+  height: 5.09375rem;
+  background: url('../image/page4/evil2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 0.9375rem;
+  bottom: 15rem;
+}
+.waimai-container .swiper-wrapper .page4 {
+  background-color: #40A000;
+}
+.waimai-container .swiper-wrapper .page4 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page4 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page4 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page4 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page4 .bg {
+  width: 18.375rem;
+  height: 10.40625rem;
+  background: url('../image/page5/bg6.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.1875rem;
+  bottom: 9.375rem;
+}
+.waimai-container .swiper-wrapper .page4 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page5/sphere4.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page4 .bear {
+  width: 9.65625rem;
+  height: 10.15625rem;
+  position: absolute;
+  left: 6.25rem;
+  bottom: 5.3125rem;
+  background: url('../image/page5/bear4.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page4 .card1 {
+  width: 5rem;
+  height: 5.46875rem;
+  background: url('../image/page5/card1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 1rem;
+  bottom: 13.59375rem;
+}
+.waimai-container .swiper-wrapper .page4 .card2 {
+  width: 5.03125rem;
+  height: 6.53125rem;
+  background: url('../image/page5/card2.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 7.5rem;
+  bottom: 16.5625rem;
+}
+.waimai-container .swiper-wrapper .page4 .card3 {
+  width: 5.21875rem;
+  height: 5.75rem;
+  background: url('../image/page5/card3.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 1.40625rem;
+  bottom: 13.125rem;
+}
+.waimai-container .swiper-wrapper .page5 {
+  background-color: #0097D0;
+}
+.waimai-container .swiper-wrapper .page5 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page5 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page5 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page5 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page5 .bg {
+  width: 18.5625rem;
+  height: 15.40625rem;
+  background: url('../image/page6/bg7.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.28125rem;
+  bottom: 9.375rem;
+}
+.waimai-container .swiper-wrapper .page5 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page6/sphere5.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page5 .bear {
+  width: 7.1875rem;
+  height: 12.1875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.59375rem;
+  bottom: 5.46875rem;
+  background: url('../image/page6/rider2.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page5 .bear .smoke {
+  width: 3.5625rem;
+  height: 0.8125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.78125rem;
+  bottom: 0;
+  background: url('../image/page6/shadow.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page5 .cloud {
+  width: 13.5rem;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -6.75rem;
+  bottom: 20.15625rem;
+  background: url('../image/page6/weather-cloud.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 {
+  background-color: #B626A1;
+}
+.waimai-container .swiper-wrapper .page6 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page6 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page6 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page6 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page6 .bg {
+  width: 18.375rem;
+  height: 10.40625rem;
+  background: url('../image/page7/bg8.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.1875rem;
+  bottom: 9.375rem;
+}
+.waimai-container .swiper-wrapper .page6 .xingqiu {
+  width: 20rem;
+  height: 11.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page7/sphere6.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear {
+  width: 8.90625rem;
+  height: 10.25rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -4.453125rem;
+  bottom: 6.25rem;
+  background: url('../image/page7/bear5.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift1 {
+  width: 1.09375rem;
+  height: 0.90625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.546875rem;
+  background: url('../image/page7/gift1.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift2 {
+  width: 2.90625rem;
+  height: 2.46875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.453125rem;
+  background: url('../image/page7/gift2.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift3 {
+  width: 2.25rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.125rem;
+  background: url('../image/page7/gift3.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift4 {
+  width: 2.84375rem;
+  height: 2.28125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.421875rem;
+  background: url('../image/page7/gift4.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift5 {
+  width: 3.09375rem;
+  height: 2.03125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.546875rem;
+  background: url('../image/page7/gift5.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift6 {
+  width: 3.34375rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.671875rem;
+  background: url('../image/page7/gift6.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift7 {
+  width: 3.34375rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.671875rem;
+  background: url('../image/page7/gift7.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift8 {
+  width: 2.75rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.375rem;
+  background: url('../image/page7/gift8.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift9 {
+  width: 2.4375rem;
+  height: 1.5625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.21875rem;
+  background: url('../image/page7/gift9.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift10 {
+  width: 1.53125rem;
+  height: 1.15625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.765625rem;
+  background: url('../image/page7/gift10.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift11 {
+  width: 1.59375rem;
+  height: 0.96875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.796875rem;
+  background: url('../image/page7/gift11.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box .gift12 {
+  width: 1.15625rem;
+  height: 0.71875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.578125rem;
+  background: url('../image/page7/gift12.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(1) {
+  width: 1.09375rem;
+  height: 0.90625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.546875rem;
+  transform: rotateZ(28deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(2) {
+  width: 2.90625rem;
+  height: 2.46875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.453125rem;
+  transform: rotateZ(56deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(3) {
+  width: 2.25rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.125rem;
+  transform: rotateZ(84deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(4) {
+  width: 2.84375rem;
+  height: 2.28125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.421875rem;
+  transform: rotateZ(112deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(5) {
+  width: 3.09375rem;
+  height: 2.03125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.546875rem;
+  transform: rotateZ(140deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(6) {
+  width: 3.34375rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.671875rem;
+  transform: rotateZ(168deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(7) {
+  width: 3.34375rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.671875rem;
+  transform: rotateZ(196deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(8) {
+  width: 2.75rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.375rem;
+  transform: rotateZ(224deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(9) {
+  width: 2.4375rem;
+  height: 1.5625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.21875rem;
+  transform: rotateZ(252deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(10) {
+  width: 1.53125rem;
+  height: 1.15625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.765625rem;
+  transform: rotateZ(280deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(11) {
+  width: 1.59375rem;
+  height: 0.96875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.796875rem;
+  transform: rotateZ(308deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page6 .bear .gift-box > div:nth-child(12) {
+  width: 1.15625rem;
+  height: 0.71875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.578125rem;
+  transform: rotateZ(336deg) translateY(7.5rem);
+}
+.waimai-container .swiper-wrapper .page7 {
+  background-color: #1A062B;
+}
+.waimai-container .swiper-wrapper .page7 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding-left: 0.625rem;
+}
+.waimai-container .swiper-wrapper .page7 .title h3 {
+  color: white;
+  font-size: 2rem;
+}
+.waimai-container .swiper-wrapper .page7 .title p {
+  color: white;
+  font-size: 0.75 81rem;
+  padding-top: 0.46875rem;
+}
+.waimai-container .swiper-wrapper .page7 .title .liner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 0.15625rem;
+}
+.waimai-container .swiper-wrapper .page7 .xingqiu {
+  width: 20rem;
+  height: 12rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 0;
+  background: url('../image/page8/sphere7.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page7 .bear {
+  width: 8.625rem;
+  height: 8.46875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.8125rem;
+  bottom: 8.75rem;
+  background: url('../image/page8/bear6.png') no-repeat center / 100% 100%;
+}
+.waimai-container .swiper-wrapper .page7 .streetlight {
+  width: 2.5rem;
+  height: 13.84375rem;
+  background: url('../image/page8/streetlight.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 7.5rem;
+  bottom: 9.375rem;
+}
+.waimai-container .swiper-wrapper .page7 .streetlight .light {
+  width: 13.65625rem;
+  height: 13.34375rem;
+  background: url('../image/page8/lamplight.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: 0.3125rem;
+  left: -4.375rem;
+}
+.waimai-container .swiper-wrapper .page7 .motobike {
+  width: 6.25rem;
+  height: 4.28125rem;
+  background: url('../image/page8/moto.png') no-repeat center / 100% 100%;
+  position: absolute;
+  bottom: 10.25rem;
+  left: 3.75rem;
+}
+.waimai-container .swiper-wrapper .page7 .share {
+  width: 11.84375rem;
+  height: 3.53125rem;
+  background: url('../image/page8/share.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -5.921875rem;
+  bottom: 4.375rem;
+}
+.waimai-container .swiper-wrapper .page7 .info {
+  width: 100%;
+  text-align: center;
+  color: #A962CD;
+  position: absolute;
+  bottom: 2.1875rem;
+  font-size: 0.75rem;
+}
+@keyframes steps {
+  to {
+    width: 100%;
+  }
+}
+@keyframes bearrider {
+  0% {
+    transform: translateX(0) translateY(-0.3125rem);
+  }
+  10% {
+    transform: translateX(-0.8125rem) translateY(0);
+  }
+  20% {
+    transform: translateX(-1.625rem) translateY(-0.3125rem);
+  }
+  30% {
+    transform: translateX(-2.4375rem) translateY(0);
+  }
+  40% {
+    transform: translateX(-3.25rem) translateY(-0.3125rem);
+  }
+  50% {
+    transform: translateX(-4.0625rem) translateY(0);
+  }
+  60% {
+    transform: translateX(-4.875rem) translateY(-0.3125rem);
+  }
+  70% {
+    transform: translateX(-5.6875rem) translateY(-0.3125rem);
+  }
+  80% {
+    transform: translateX(-6.5rem) translateY(0);
+  }
+  90% {
+    transform: translateX(-7.3125rem) translateY(-0.3125rem);
+  }
+  100% {
+    transform: translateX(-8.125rem) translateY(0);
+  }
+}
+.loading .process {
+  background-color: transparent;
+}
+.loading .process .step {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  background-color: #FC254D;
+  height: 100%;
+  border-radius: 0.625rem;
+}
+.loading.animate .process .step {
+  animation: steps 1.5s linear forwards;
+}
+.loading.animate .rider {
+  animation: bearrider 1.5s linear forwards;
+}
+@keyframes grass1 {
+  to {
+    height: 12.375rem;
+  }
+}
+@keyframes grass2 {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes tree {
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(20%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bear-box {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bearrider1 {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes smoke {
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes btn-box {
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes circle2 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes beardisapper {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+.welcome {
+  overflow: hidden;
+}
+.welcome .grass1 {
+  height: 20%;
+}
+.welcome .grass2 {
+  opacity: 0;
+  transform: scale(2, 1);
+}
+.welcome .tree {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.welcome .bear-box {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.welcome .bear-box .smoke {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.welcome .btn-box {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.welcome .info {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.welcome .info .hello {
+  opacity: 0;
+}
+.welcome.animate .grass1 {
+  animation: grass1 .5s forwards;
+}
+.welcome.animate .grass2 {
+  animation: grass2 .5s .5s forwards;
+}
+.welcome.animate .tree {
+  animation: tree .5s 1s forwards;
+}
+.welcome.animate .bear-box {
+  animation: bear-box 0.5s 1.5s forwards;
+}
+.welcome.animate .bear-box .bear {
+  animation: bearrider1 .5s infinite linear;
+}
+.welcome.animate .bear-box .smoke {
+  animation: smoke .5s infinite linear;
+}
+.welcome.animate .btn-box {
+  animation: btn-box 0.5s 2s forwards;
+}
+.welcome.animate .btn-box .circle2 {
+  animation: circle2 1.5s infinite linear;
+}
+.welcome.animate .info {
+  animation: bear-box 0.5s 2.5s forwards;
+}
+.welcome.animate .info .hello {
+  animation: smoke .5s 3s forwards;
+}
+@keyframes righttoleft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes liner {
+  to {
+    height: 100%;
+  }
+}
+.waimai-container .swiper-wrapper .swiper-slide .title h3 {
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .swiper-slide .title p {
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .swiper-slide .title .liner {
+  height: 0;
+}
+@keyframes disapper1 {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+@keyframes disapper {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  95% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes updownleftright {
+  25% {
+    transform: translateX(5%) translateY(-5%);
+  }
+  50% {
+    transform: translateX(-5%) translateY(-5%);
+  }
+  75% {
+    transform: translateX(5%) translateY(5%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes rightandleft {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(20%);
+  }
+}
+@keyframes leg2 {
+  to {
+    transform: none;
+  }
+}
+.page1 .scroller-page1 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page1 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page1 .text {
+  opacity: 0;
+  transform-origin: 100% 100%;
+}
+.page1 .scroller-page2 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page2 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page2 .person .leg2 {
+  transform-origin: 0 100%;
+  transform: rotate(40deg);
+}
+.page1 .scroller-page2 .text {
+  opacity: 0;
+  transform-origin: 100% 100%;
+}
+.page1 .scroller-page3 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page3 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroller-page3 .text {
+  opacity: 0;
+  transform-origin: 100% 100%;
+}
+.swiper-slide.animate .title h3 {
+  animation: righttoleft .5s forwards;
+}
+.swiper-slide.animate .title p {
+  animation: righttoleft .5s .3s forwards;
+}
+.swiper-slide.animate .title .liner {
+  animation: liner .5s .7s forwards;
+}
+.page1.animate .scroller-page1 .bg {
+  animation: disapper 1.5s forwards;
+}
+.page1.animate .scroller-page1 .person {
+  animation: disapper 1.5s .2s forwards;
+}
+.page1.animate .scroller-page1 .person .paper1 {
+  animation: rightandleft 1s infinite;
+}
+.page1.animate .scroller-page1 .person .paper2 {
+  animation: rightandleft .7s infinite;
+}
+.page1.animate .scroller-page1 .text {
+  animation: disapper 1s .3s forwards;
+}
+.page1.animate .scroller-page2 .bg {
+  animation: disapper 1.5s 1.7s forwards;
+}
+.page1.animate .scroller-page2 .person {
+  animation: disapper 1.5s 1.9s forwards;
+}
+.page1.animate .scroller-page2 .person .leg2 {
+  animation: leg2 1s 2s forwards;
+}
+.page1.animate .scroller-page2 .text {
+  animation: disapper 1s 2s forwards;
+}
+.page1.animate .scroller-page3 .bg {
+  animation: disapper1 1.5s 3.4s forwards;
+}
+.page1.animate .scroller-page3 .person {
+  animation: disapper1 1.5s 3.6s forwards;
+}
+.page1.animate .scroller-page3 .person .word1 {
+  animation: updownleftright 1s infinite;
+}
+.page1.animate .scroller-page3 .person .word2 {
+  animation: updownleftright .7s infinite;
+}
+.page1.animate .scroller-page3 .person .word3 {
+  animation: updownleftright 1.5s infinite;
+}
+.page1.animate .scroller-page3 .person .word4 {
+  animation: updownleftright 2s infinite;
+}
+.page1.animate .scroller-page3 .text {
+  animation: disapper1 1s 3.7s forwards;
+}
+.page2 .bg {
+  transform-origin: 50% 200%;
+}
+.page2 .bear {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.page2 .bear .face1 {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page2 .bear .face2 {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page2 .bear .hand-right {
+  transform-origin: 80% 0;
+}
+.page2 .bear .hand-left {
+  transform-origin: 20% 0;
+}
+.page2 .table {
+  opacity: 0;
+}
+.page2 .food {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+@keyframes downtoup {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes smalltobig {
+  75% {
+    opacity: 1;
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes shark {
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.page2.animate .bg {
+  animation: disapper1 1s forwards;
+}
+.page2.animate .bear {
+  animation: bear-box 1s 0.5s forwards;
+}
+.page2.animate .bear .face1 {
+  animation: smalltobig .8s 1.5s forwards;
+}
+.page2.animate .bear .face2 {
+  animation: smalltobig .8s 1.5s forwards;
+}
+.page2.animate .bear .hand-right {
+  animation: shark .5s infinite linear;
+}
+.page2.animate .bear .hand-left {
+  animation: shark .5s infinite linear;
+}
+.page2.animate .table {
+  animation: downtoup 1s 1s forwards;
+}
+.page2.animate .food {
+  animation: bear-box 1s 1.5s forwards;
+}
+@keyframes updownleftright1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(5%) translateY(-5%);
+  }
+  50% {
+    transform: translateX(-5%) translateY(-5%);
+  }
+  75% {
+    transform: translateX(5%) translateY(5%);
+  }
+  100% {
+    transform: translateX(-5%) translateY(-5%);
+  }
+}
+.page3 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page3 .bear {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.page3 .pic1 {
+  transform: scale(0, 0);
+}
+.page3 .pic2 {
+  transform: scale(0, 0);
+}
+.page3 .pic3 {
+  transform: scale(0, 0);
+}
+.page3.animate .bg {
+  animation: disapper1 1s forwards;
+}
+.page3.animate .bear {
+  animation: bear-box 1s 0.5s forwards;
+}
+.page3.animate .pic1 {
+  animation: smalltobig 1s 1.5s forwards, updownleftright1 .7s 2.6s infinite linear;
+}
+.page3.animate .pic2 {
+  animation: smalltobig 1.2s 1.5s forwards, updownleftright1 1s 2.8s infinite linear;
+}
+.page3.animate .pic3 {
+  animation: smalltobig .8s 1.5s forwards, updownleftright1 2s 2.4s infinite linear;
+}
+.waimai-container .swiper-wrapper .page3 .bear-box .bear1 {
+  width: 7.84375rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.921875rem;
+  bottom: 6.09375rem;
+  background: url('../image/page4/bear3-1-1.png') no-repeat center / 100% 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .page3 .bear-box .bear2 {
+  width: 6.71875rem;
+  height: 9.78125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.359375rem;
+  bottom: 6.09375rem;
+  background: url('../image/page4/bear3-2-1.png') no-repeat center / 100% 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .page3 .bear-box .bear3 {
+  width: 9.0625rem;
+  height: 10.03125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -4.53125rem;
+  bottom: 6.09375rem;
+  background: url('../image/page4/bear3-3-1.png') no-repeat center / 100% 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .page3 .hit-card-box .card1 {
+  width: 7.125rem;
+  height: 4.71875rem;
+  background: url('../image/page4/license1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 1.25rem;
+  bottom: 15.625rem;
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .page3 .hit-card-box .card2 {
+  width: 7.21875rem;
+  height: 4.875rem;
+  background: url('../image/page4/oil1.png') no-repeat center / 100% 100%;
+  position: absolute;
+  left: 7.03125rem;
+  bottom: 20.625rem;
+  opacity: 0;
+}
+.waimai-container .swiper-wrapper .page3 .hit-card-box .card3 {
+  width: 6.59375rem;
+  height: 5.40625rem;
+  background: url('../image/page4/evil21.png') no-repeat center / 100% 100%;
+  position: absolute;
+  right: 0.9375rem;
+  bottom: 15rem;
+  opacity: 0;
+}
+.page4 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page4 .bear {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.page4 .card1 {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page4 .card2 {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page4 .card3 {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page4.animate .bg {
+  animation: disapper1 1s forwards;
+}
+.page4.animate .bear {
+  animation: bear-box 1s 0.5s forwards;
+}
+.page4.animate .card1 {
+  animation: smalltobig .8s 1.5s forwards;
+}
+.page4.animate .card2 {
+  animation: smalltobig .8s 1.5s forwards;
+}
+.page4.animate .card3 {
+  animation: smalltobig .8s 1.5s forwards;
+}
+@keyframes snowleft {
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1000%) translateX(-100%);
+  }
+}
+@keyframes snowright {
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1000%) translateX(100%);
+  }
+}
+.page5 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page5 .bear {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.page5 .bear .smoke {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page5 .cloud {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.page5 .cloud .snow {
+  width: 1rem;
+  height: 1rem;
+  background: url('../image/page6/snow-piece.png') no-repeat center / 100% 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+}
+.page5 .cloud .snow:nth-child(2) {
+  left: 1rem;
+}
+.page5 .cloud .snow:nth-child(3) {
+  left: 2rem;
+}
+.page5 .cloud .snow:nth-child(4) {
+  left: 3rem;
+}
+.page5 .cloud .snow:nth-child(5) {
+  left: 4rem;
+}
+.page5 .cloud .snow:nth-child(6) {
+  left: 5rem;
+}
+.page5.animate .bg {
+  animation: disapper1 1s forwards;
+}
+.page5.animate .bear {
+  animation: bear-box 1s 0.5s forwards, bearrider1 0.8s infinite linear;
+}
+.page5.animate .bear .smoke {
+  animation: smoke .8s infinite linear;
+}
+.page5.animate .cloud {
+  animation: smoke 1s 1.5s forwards, updownleftright1 1.5s infinite linear;
+}
+.page5.animate .cloud .snow:nth-child(1) {
+  animation: snowleft .6s 2.5s infinite;
+}
+.page5.animate .cloud .snow:nth-child(2) {
+  animation: snowright 1s 2.5s infinite;
+}
+.page5.animate .cloud .snow:nth-child(3) {
+  animation: snowleft 2s 2.5s infinite;
+}
+.page5.animate .cloud .snow:nth-child(4) {
+  animation: snowright .2s 2.5s infinite;
+}
+.page5.animate .cloud .snow:nth-child(5) {
+  animation: snowleft 1.5s 2.5s infinite;
+}
+.page5.animate .cloud .snow:nth-child(6) {
+  animation: snowright .8s 2.5s infinite;
+}
+@keyframes gift {
+  from {
+    transform: none;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes small {
+  to {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+}
+.page6 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page6 .bear {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.page6 .bear .gift-box > div {
+  opacity: 0;
+}
+.page6.animate .bg {
+  animation: disapper1 1s forwards;
+}
+.page6.animate .bear {
+  animation: bear-box 1s 0.5s forwards;
+}
+.page6.animate .bear .gift-box > div {
+  animation: gift 2s 1.5s infinite;
+}
+.page6.animate .bear .gift-box > div > div {
+  animation: circle2 1s 1.5s infinite linear;
+}
+.audiobtn {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url('../image/pause.png') no-repeat center / 100% 100%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9;
+}
